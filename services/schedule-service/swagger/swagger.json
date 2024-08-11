@@ -5,7 +5,7 @@
         "version": "1.0.0"
     },
     "paths": {
-        "/schedules": {
+        "/api/schedules": {
             "get": {
                 "summary": "Get all train schedules",
                 "responses": {
@@ -38,18 +38,18 @@
                 }
             }
         },
-        "/schedules/{id}": {
+        "/api/schedules/{train_id}": {
             "get": {
-                "summary": "Get a specific train schedule by ID",
+                "summary": "Get a specific train schedule by Train ID",
                 "parameters": [
                     {
-                        "name": "id",
+                        "name": "train_id",
                         "in": "path",
                         "required": true,
                         "schema": {
-                            "type": "integer"
+                            "type": "string"
                         },
-                        "description": "ID of the schedule to retrieve"
+                        "description": "ID of the train to retrieve the schedule"
                     }
                 ],
                 "responses": {
