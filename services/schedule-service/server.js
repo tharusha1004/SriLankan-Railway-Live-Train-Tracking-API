@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
@@ -7,23 +9,23 @@ const logger = require('./logs/schedule.log');
 const authMiddleware = require('./middleware/basicAuth');
 const connectDB = require('./config/db');
 
-const app = express();
+const server = express();
 
 // Connect to MongoDB
 connectDB();
 
-app.use(bodyParser.json());
+server.use(bodyParser.json());
 
 // Apply Basic Authentication
-app.use(authMiddleware);
+server.use(authMiddleware);
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.use('/api', scheduleRoutes);
+server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+server.use('/api', scheduleRoutes);
 
 const port = process.env.PORT;
 
 if (process.env.NODE_ENV !== 'test') {
-    app.listen(port, () => {
+    server.listen(port, () => {
         logger.info(`Schedule service listening on port ${port}`);
     });
 }
