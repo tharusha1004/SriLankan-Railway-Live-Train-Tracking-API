@@ -4,8 +4,11 @@ const getAllSchedules = (callback) => {
     Schedule.find({}, callback);
 };
 
-const getScheduleById = (id, callback) => {
-    Schedule.findById(id, callback);
+const getScheduleByTrainId = (trainId, callback) => {
+    Schedule.find({ train_id: trainId }, (err, schedules) => {
+        if (err) return callback(err, null);
+        callback(null, schedules);
+    });
 };
 
 const createSchedule = (scheduleData, callback) => {
@@ -13,4 +16,4 @@ const createSchedule = (scheduleData, callback) => {
     schedule.save(callback);
 };
 
-module.exports = { getAllSchedules, getScheduleById, createSchedule };
+module.exports = { getAllSchedules, getScheduleByTrainId, createSchedule };

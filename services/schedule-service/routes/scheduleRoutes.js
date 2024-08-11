@@ -12,11 +12,11 @@ router.get('/schedules', (req, res) => {
 });
 
 // Get a specific schedule by ID
-router.get('/schedules/:id', (req, res) => {
-    const scheduleId = req.params.id;
-    scheduleService.getScheduleById(scheduleId, (err, results) => {
+router.get('/schedules/:train_id', (req, res) => {
+    const trainId = req.params.train_id;
+    scheduleService.getScheduleByTrainId(trainId, (err, results) => {
         if (err) return res.status(500).json(err);
-        if (!results) return res.status(404).json({ message: "Schedule not found" });
+        if (!results || results.length === 0) return res.status(404).json({ message: "Schedule not found" });
         res.json(results);
     });
 });
