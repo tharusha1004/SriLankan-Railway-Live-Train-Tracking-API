@@ -57,7 +57,7 @@ pipelines:
   default:
     apiEndpoints:
       - trainTracking
-      - schedule
+      - schedule-service
       - user
       - notification
       - engineManagement
