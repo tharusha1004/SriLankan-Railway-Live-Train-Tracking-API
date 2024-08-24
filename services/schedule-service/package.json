@@ -2,7 +2,7 @@
 	"name": "schedule-service",
 	"version": "1.0.0",
 	"description": "A microservice for managing train schedules and routes",
-	"main": "app.js",
+	"main": "server.js",
 	"scripts": {
 		"start": "nodemon server.js",
 		"test": "mocha"
