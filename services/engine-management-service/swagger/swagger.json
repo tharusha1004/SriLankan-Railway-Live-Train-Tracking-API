@@ -1,0 +1,84 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Sri Lankan Railway Engine Management Service",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/engine-management": {
+            "post": {
+                "summary": "Assign an engine to a train",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": { "$ref": "#/components/schemas/EngineAssignment" }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Engine assigned"
+                    }
+                }
+            }
+        },
+        "/api/engine-management/{trainId}": {
+            "get": {
+                "summary": "Get assigned engines for a specific train",
+                "parameters": [
+                    {
+                        "name": "trainId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "description": "ID of the train to retrieve assigned engines"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Engine assignments retrieved",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": { "$ref": "#/components/schemas/EngineAssignment" }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No engine assignments found for the specified train"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "EngineAssignment": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "description": "ID of the engine assignment"
+                    },
+                    "train_id": {
+                        "type": "string",
+                        "description": "ID of the train"
+                    },
+                    "engine_id": {
+                        "type": "string",
+                        "description": "ID of the engine"
+                    },
+                    "assigned_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Timestamp when the engine was assigned"
+                    }
+                }
+            }
+        }
+    }
+}
