@@ -1,4 +1,4 @@
-const userModel = require('../models/userModel');
+const userModel = require('../models/user');
 const { generateToken } = require('../config/auth');
 const { publishMessage } = require('../services/rabbitmqService');
 
