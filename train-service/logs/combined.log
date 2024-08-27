@@ -24,3 +24,7 @@
 {"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-27T18:38:53.811Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T18:38:53.841Z"}
 {"level":"info","message":"Train Express created successfully","timestamp":"2024-08-27T18:38:53.968Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-27T18:42:55.770Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-27T18:42:55.837Z"}
+{"level":"error","message":"Error creating train: E11000 duplicate key error collection: SLR-Train-API.trains index: trainId_1 dup key: { trainId: \"EXP123\" }","timestamp":"2024-08-27T18:42:55.974Z"}
+{"level":"error","message":"Error updating train: Cast to ObjectId failed for value \"EXP123\" (type string) at path \"_id\" for model \"Train\"","timestamp":"2024-08-27T18:42:55.999Z"}
