@@ -1,0 +1,104 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "API documentation for Train Service",
+      "version": "1.0.0",
+      "title": "Train Service"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/trains": {
+        "get": {
+          "summary": "Get all trains",
+          "description": "Retrieve a list of all trains",
+          "responses": {
+            "200": {
+              "description": "A list of trains",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Train"
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Create a new train",
+          "description": "Admin user creates a new train",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "train",
+              "description": "Train object to be created",
+              "schema": {
+                "$ref": "#/definitions/Train"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Train created successfully"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      },
+      "/trains/{id}": {
+        "put": {
+          "summary": "Update an existing train",
+          "description": "Admin user updates train details",
+          "parameters": [
+            {
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "description": "Train ID",
+              "type": "string"
+            },
+            {
+              "in": "body",
+              "name": "train",
+              "description": "Train object with updated data",
+              "schema": {
+                "$ref": "#/definitions/Train"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Train updated successfully"
+            },
+            "404": {
+              "description": "Train not found"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Train": {
+        "type": "object",
+        "required": ["trainName", "trainId", "lane"],
+        "properties": {
+          "trainName": {
+            "type": "string"
+          },
+          "trainId": {
+            "type": "string"
+          },
+          "lane": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+  
