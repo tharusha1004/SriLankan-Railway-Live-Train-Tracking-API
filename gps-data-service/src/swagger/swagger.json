@@ -5,7 +5,7 @@
       "title": "GPS Data Service API",
       "description": "API Documentation for GPS Data Service"
     },
-    "host": "localhost:3000",
+    "host": "localhost:3002",
     "basePath": "/api",
     "schemes": ["http"],
     "paths": {
