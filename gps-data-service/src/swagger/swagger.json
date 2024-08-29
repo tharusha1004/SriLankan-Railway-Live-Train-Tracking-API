@@ -1,0 +1,65 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "GPS Data Service API",
+      "description": "API Documentation for GPS Data Service"
+    },
+    "host": "localhost:3002",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/gps-data": {
+        "post": {
+          "summary": "Add GPS Data",
+          "description": "Add new GPS data for a train",
+          "consumes": ["application/json"],
+          "produces": ["application/json"],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "description": "GPS data",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/GPSData"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "GPS data created"
+            }
+          }
+        },
+        "get": {
+          "summary": "Get GPS Data",
+          "description": "Retrieve all GPS data",
+          "produces": ["application/json"],
+          "responses": {
+            "200": {
+              "description": "GPS data retrieved"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "GPSData": {
+        "type": "object",
+        "properties": {
+          "trainId": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+  

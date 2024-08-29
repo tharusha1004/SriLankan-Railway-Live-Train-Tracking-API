@@ -1,0 +1,202 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Train Tracking Service API",
+      "version": "1.0.0",
+      "description": "API for tracking train locations."
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3005/api",
+        "description": "Local server"
+      }
+    ],
+    "paths": {
+      "/train-location": {
+        "post": {
+          "tags": ["Admin"],
+          "summary": "Add a new train location",
+          "description": "Allows an admin to add a new location entry for a train.",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "trainId": {
+                      "type": "string",
+                      "example": "TR001"
+                    },
+                    "trainName": {
+                      "type": "string",
+                      "example": "Express"
+                    },
+                    "currentStation": {
+                      "type": "string",
+                      "example": "Colombo Fort"
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "On Time"
+                    }
+                  },
+                  "required": ["trainId", "trainName", "currentStation", "status"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Train location added successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/TrainTracking"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "basicAuth": []
+            }
+          ]
+        },
+        "get": {
+          "tags": ["User"],
+          "summary": "Get train locations",
+          "description": "Retrieve the current location and status of trains based on provided filters.",
+          "parameters": [
+            {
+              "name": "trainId",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "example": "TR001"
+              },
+              "description": "Optional. Filter by train ID."
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Train locations retrieved successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/TrainTracking"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Train not found"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      },
+      "/train-location/{id}": {
+        "put": {
+          "tags": ["Admin"],
+          "summary": "Update train location",
+          "description": "Allows an admin to update the current location and status of a train.",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "example": "TR001"
+              },
+              "description": "Train ID to update"
+            }
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "trainName": {
+                      "type": "string",
+                      "example": "Express"
+                    },
+                    "currentStation": {
+                      "type": "string",
+                      "example": "Colombo Fort"
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "On Time"
+                    }
+                  },
+                  "required": ["trainName", "currentStation", "status"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Train location updated successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/TrainTracking"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          },
+          "security": [
+            {
+              "basicAuth": []
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "TrainTracking": {
+          "type": "object",
+          "properties": {
+            "trainId": {
+              "type": "string",
+              "example": "TR001"
+            },
+            "trainName": {
+              "type": "string",
+              "example": "Express"
+            },
+            "currentStation": {
+              "type": "string",
+              "example": "Colombo Fort"
+            },
+            "status": {
+              "type": "string",
+              "example": "On Time"
+            }
+          }
+        }
+      },
+      "securitySchemes": {
+        "basicAuth": {
+          "type": "http",
+          "scheme": "basic"
+        }
+      }
+    }
+  }
+  

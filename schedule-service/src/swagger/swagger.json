@@ -1,0 +1,142 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "API documentation for Schedule Service",
+      "version": "1.0.0",
+      "title": "Schedule Service"
+    },
+    "host": "localhost:3003",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/schedules": {
+        "get": {
+          "summary": "Get all schedules",
+          "description": "Retrieve a list of all schedules",
+          "responses": {
+            "200": {
+              "description": "A list of schedules",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Schedule"
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Create a new schedule",
+          "description": "Admin user creates a new schedule",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "schedule",
+              "description": "Schedule object to be created",
+              "schema": {
+                "$ref": "#/definitions/Schedule"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Schedule created successfully"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      },
+      "/schedules/{id}": {
+        "put": {
+          "summary": "Update an existing schedule",
+          "description": "Admin user updates schedule details",
+          "parameters": [
+            {
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "description": "Schedule ID",
+              "type": "string"
+            },
+            {
+              "in": "body",
+              "name": "schedule",
+              "description": "Schedule object with updated data",
+              "schema": {
+                "$ref": "#/definitions/Schedule"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Schedule updated successfully"
+            },
+            "404": {
+              "description": "Schedule not found"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        },
+        "delete": {
+          "summary": "Delete a schedule",
+          "description": "Admin user deletes a schedule",
+          "parameters": [
+            {
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "description": "Schedule ID",
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Schedule deleted successfully"
+            },
+            "404": {
+              "description": "Schedule not found"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Schedule": {
+        "type": "object",
+        "required": ["trainId", "startStation", "startTime", "endStation", "endTime", "stations"],
+        "properties": {
+          "trainId": {
+            "type": "string"
+          },
+          "startStation": {
+            "type": "string"
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endStation": {
+            "type": "string"
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "stations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,85 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "API documentation for Engine Management Service",
+      "version": "1.0.0",
+      "title": "Engine Management Service"
+    },
+    "host": "localhost:3001",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/engine-status": {
+        "get": {
+          "summary": "Get engine status",
+          "description": "Retrieve the current status of an engine",
+          "parameters": [
+            {
+              "name": "engineId",
+              "in": "query",
+              "required": true,
+              "description": "ID of the engine",
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Engine status retrieved successfully",
+              "schema": {
+                "$ref": "#/definitions/Engine"
+              }
+            },
+            "404": {
+              "description": "Engine not found"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        },
+        "post": {
+          "summary": "Create or update engine status",
+          "description": "Admin user creates or updates the status of an engine",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "engine",
+              "description": "Engine data to be created or updated",
+              "schema": {
+                "$ref": "#/definitions/Engine"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Engine status updated successfully"
+            },
+            "500": {
+              "description": "Internal server error"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Engine": {
+        "type": "object",
+        "required": ["engineId", "status", "currentStation"],
+        "properties": {
+          "engineId": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["Operational", "Crashing", "Under Maintenance"]
+          },
+          "currentStation": {
+            "type": "string"
+          },
+          "delayTime": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }

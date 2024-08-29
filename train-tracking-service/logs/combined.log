@@ -1,0 +1,13 @@
+{"level":"info","message":"Server is running on port 3003","timestamp":"2024-08-29T15:21:33.493Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T15:21:33.523Z"}
+{"level":"info","message":"Train TR001 location added successfully","timestamp":"2024-08-29T15:24:12.693Z"}
+{"level":"info","message":"Train TR001 updated successfully","timestamp":"2024-08-29T15:26:17.916Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T15:32:32.502Z"}
+{"level":"info","message":"Server is running on port 3003","timestamp":"2024-08-29T15:33:05.936Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T15:33:05.964Z"}
+{"level":"info","message":"Server is running on port 3003","timestamp":"2024-08-29T15:33:42.376Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T15:33:42.416Z"}
+{"level":"info","message":"Server is running on port 3005","timestamp":"2024-08-29T20:38:41.565Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T20:38:41.593Z"}
+{"level":"info","message":"Train TR006 location added successfully","timestamp":"2024-08-29T20:39:20.162Z"}
+{"level":"info","message":"Train TR006 updated successfully","timestamp":"2024-08-29T20:40:04.122Z"}

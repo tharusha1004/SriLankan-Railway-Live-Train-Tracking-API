@@ -1,0 +1,24 @@
+{"level":"info","message":"Server is running on port 3002","timestamp":"2024-08-28T16:25:40.026Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T16:25:40.050Z"}
+{"level":"error","message":"Error creating schedule: Cannot access 'Schedule' before initialization","timestamp":"2024-08-28T16:40:32.709Z"}
+{"level":"error","message":"Error creating schedule: Cannot access 'Schedule' before initialization","timestamp":"2024-08-28T16:42:12.693Z"}
+{"level":"error","message":"Error creating schedule: Cannot access 'Schedule' before initialization","timestamp":"2024-08-28T16:44:41.399Z"}
+{"level":"error","message":"Error creating schedule: Cannot access 'Schedule' before initialization","timestamp":"2024-08-28T16:50:33.990Z"}
+{"level":"info","message":"Server is running on port 3002","timestamp":"2024-08-28T16:50:43.789Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T16:50:43.812Z"}
+{"level":"error","message":"Error creating schedule: Schedule validation failed: stations: Cast to string failed for value \"[\n  'Chilaw',\n  'Sawarana',\n  'Madampe',\n  'Kandana',\n  'Ragama',\n  'Colombo Fort',\n  'Panadura'\n]\" (type Array) at path \"stations\"","timestamp":"2024-08-28T16:50:50.800Z"}
+{"level":"error","message":"Error creating schedule: Schedule validation failed: stations: Cast to string failed for value \"[\n  'Chilaw, Sawarana, Madampe, Kandana, Ragama, Colombo Fort, Panadura'\n]\" (type Array) at path \"stations\"","timestamp":"2024-08-28T16:53:44.102Z"}
+{"level":"error","message":"Error creating schedule: Schedule validation failed: stations: Cast to string failed for value \"[\n  'Chilaw',\n  'Sawarana',\n  'Madampe',\n  'Kandana',\n  'Ragama',\n  'Colombo Fort',\n  'Panadura'\n]\" (type Array) at path \"stations\"","timestamp":"2024-08-28T16:54:49.309Z"}
+{"level":"info","message":"Server is running on port 3002","timestamp":"2024-08-28T16:57:11.371Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T16:57:11.398Z"}
+{"level":"info","message":"Schedule for train TR001 created successfully","timestamp":"2024-08-28T16:57:15.482Z"}
+{"level":"info","message":"Schedule for train TR001 updated successfully","timestamp":"2024-08-28T16:59:32.845Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-28T17:40:36.440Z"}
+{"level":"info","message":"Schedule for train EXP123 created successfully","timestamp":"2024-08-28T17:40:36.537Z"}
+{"level":"info","message":"Schedule for train EXP123 updated successfully","timestamp":"2024-08-28T17:40:36.585Z"}
+{"level":"info","message":"Schedule for train EXP123 deleted successfully","timestamp":"2024-08-28T17:40:36.606Z"}
+{"level":"info","message":"Server is running on port 3003","timestamp":"2024-08-29T20:16:58.478Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T20:16:58.503Z"}
+{"level":"info","message":"Schedule for train TR001 created successfully","timestamp":"2024-08-29T20:17:14.089Z"}
+{"level":"info","message":"Schedule for train TR001 updated successfully","timestamp":"2024-08-29T20:18:45.747Z"}
+{"level":"info","message":"Schedule for train TR001 deleted successfully","timestamp":"2024-08-29T20:19:35.443Z"}
