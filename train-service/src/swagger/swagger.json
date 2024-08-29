@@ -5,7 +5,7 @@
       "version": "1.0.0",
       "title": "Train Service"
     },
-    "host": "localhost:3000",
+    "host": "localhost:3004",
     "basePath": "/api",
     "schemes": ["http"],
     "paths": {

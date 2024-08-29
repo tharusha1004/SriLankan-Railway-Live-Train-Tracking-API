@@ -34,3 +34,11 @@
 {"level":"error","message":"Error updating train: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: SLR-Train-API.trains index: trainId_1 dup key: { trainId: \"TR002\" }","timestamp":"2024-08-27T18:53:37.756Z"}
 {"level":"error","message":"Error updating train: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: SLR-Train-API.trains index: trainId_1 dup key: { trainId: \"TR002\" }","timestamp":"2024-08-27T18:54:09.443Z"}
 {"level":"info","message":"Train Samudra updated successfully","timestamp":"2024-08-27T18:54:46.515Z"}
+{"level":"info","message":"Server is running on port 3006","timestamp":"2024-08-29T18:09:47.850Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T18:09:47.877Z"}
+{"level":"info","message":"Train Sagarika created successfully","timestamp":"2024-08-29T18:10:47.269Z"}
+{"level":"info","message":"Server is running on port 3004","timestamp":"2024-08-29T20:32:58.303Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T20:32:58.325Z"}
+{"level":"error","message":"Error creating train: E11000 duplicate key error collection: SLR-Train-API.trains index: trainId_1 dup key: { trainId: \"TR002\" }","timestamp":"2024-08-29T20:33:38.056Z"}
+{"level":"info","message":"Train Sagarika created successfully","timestamp":"2024-08-29T20:34:14.075Z"}
+{"level":"info","message":"Train Samudra updated successfully","timestamp":"2024-08-29T20:34:58.258Z"}
