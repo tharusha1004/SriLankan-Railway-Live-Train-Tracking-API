@@ -1,0 +1,33 @@
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T16:21:00.767Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T16:21:00.789Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a constructor","timestamp":"2024-08-29T16:32:07.678Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a constructor","timestamp":"2024-08-29T16:39:29.550Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a constructor","timestamp":"2024-08-29T16:48:55.960Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a constructor","timestamp":"2024-08-29T16:49:03.761Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a constructor","timestamp":"2024-08-29T16:49:33.034Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T16:49:46.473Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T16:49:46.492Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findByIdAndUpdate is not a constructor","timestamp":"2024-08-29T16:49:50.143Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T16:50:08.769Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T16:50:08.790Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a constructor","timestamp":"2024-08-29T16:50:14.073Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T16:51:31.524Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T16:51:31.547Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a function","timestamp":"2024-08-29T16:51:36.607Z"}
+{"level":"error","message":"Error fetching engine data: Engine.find is not a function","timestamp":"2024-08-29T16:52:08.872Z"}
+{"level":"error","message":"Error fetching engine data: Engine.find is not a function","timestamp":"2024-08-29T16:52:14.031Z"}
+{"level":"error","message":"Error create or update engine status: Engine.findOneAndUpdate is not a function","timestamp":"2024-08-29T16:52:18.556Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T17:00:06.535Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:00:06.558Z"}
+{"level":"info","message":"Engine ENG001 status updated successfully","timestamp":"2024-08-29T17:00:29.226Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T17:04:33.517Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:04:33.541Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T17:05:32.938Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:05:32.965Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T17:07:47.995Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:07:48.022Z"}
+{"level":"info","message":"Engine ENG002 status updated successfully","timestamp":"2024-08-29T17:09:08.160Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T17:09:56.835Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:09:56.856Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:14:34.400Z"}
+{"level":"info","message":"Engine ENG001 status updated successfully","timestamp":"2024-08-29T17:14:34.535Z"}
