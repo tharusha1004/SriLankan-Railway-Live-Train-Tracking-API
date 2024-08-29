@@ -19,7 +19,7 @@ server.use(bodyParser.json());
 server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 server.use('/api', userRoutes);
 
-const PORT = process.env.PORT || 3007;
+const PORT = process.env.PORT || 3006;
 server.listen(PORT, () => {
     logger.info(`Server is running on port ${PORT}`);
 });

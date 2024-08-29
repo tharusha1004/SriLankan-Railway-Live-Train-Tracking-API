@@ -5,7 +5,7 @@
       "title": "Login Service API",
       "description": "API Documentation for Login Service"
     },
-    "host": "localhost:3000",
+    "host": "localhost:3006",
     "basePath": "/api",
     "schemes": ["http"],
     "paths": {
