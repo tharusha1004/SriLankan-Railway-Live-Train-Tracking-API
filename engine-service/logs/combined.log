@@ -31,3 +31,9 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:09:56.856Z"}
 {"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T17:14:34.400Z"}
 {"level":"info","message":"Engine ENG001 status updated successfully","timestamp":"2024-08-29T17:14:34.535Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T19:56:21.236Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T19:56:21.279Z"}
+{"level":"info","message":"Engine ENG001 status updated successfully","timestamp":"2024-08-29T19:56:54.499Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2024-08-29T20:00:50.264Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T20:00:50.293Z"}
+{"level":"info","message":"Engine ENG003 status updated successfully","timestamp":"2024-08-29T20:01:05.869Z"}
