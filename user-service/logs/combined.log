@@ -1,0 +1,10 @@
+{"level":"info","message":"Server is running on port 3007","timestamp":"2024-08-29T19:37:12.770Z"}
+{"level":"info","message":"User tharusha registered successfully","timestamp":"2024-08-29T19:40:50.840Z"}
+{"level":"info","message":"User tharusha logged in successfully","timestamp":"2024-08-29T19:41:52.710Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-29T19:42:03.783Z"}
+{"level":"warn","message":"Login failed for user: admin","timestamp":"2024-08-29T19:42:11.152Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-29T19:42:23.113Z"}
+{"level":"info","message":"User tharusha updated profile successfully","timestamp":"2024-08-29T19:46:40.193Z"}
+{"level":"info","message":"User tharusha deleted successfully","timestamp":"2024-08-29T19:47:30.257Z"}
+{"level":"info","message":"User tharusha registered successfully","timestamp":"2024-08-29T19:47:42.016Z"}
+{"level":"info","message":"Server is running on port 3007","timestamp":"2024-08-29T19:49:08.078Z"}
