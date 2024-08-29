@@ -1,4 +1,4 @@
-# Train Service - README
+# Train Service
 
 ## Overview
 
