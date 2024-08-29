@@ -5,7 +5,7 @@
       "version": "1.0.0",
       "title": "Schedule Service"
     },
-    "host": "localhost:3000",
+    "host": "localhost:3003",
     "basePath": "/api",
     "schemes": ["http"],
     "paths": {

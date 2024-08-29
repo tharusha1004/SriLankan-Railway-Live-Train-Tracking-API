@@ -17,3 +17,8 @@
 {"level":"info","message":"Schedule for train EXP123 created successfully","timestamp":"2024-08-28T17:40:36.537Z"}
 {"level":"info","message":"Schedule for train EXP123 updated successfully","timestamp":"2024-08-28T17:40:36.585Z"}
 {"level":"info","message":"Schedule for train EXP123 deleted successfully","timestamp":"2024-08-28T17:40:36.606Z"}
+{"level":"info","message":"Server is running on port 3003","timestamp":"2024-08-29T20:16:58.478Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-08-29T20:16:58.503Z"}
+{"level":"info","message":"Schedule for train TR001 created successfully","timestamp":"2024-08-29T20:17:14.089Z"}
+{"level":"info","message":"Schedule for train TR001 updated successfully","timestamp":"2024-08-29T20:18:45.747Z"}
+{"level":"info","message":"Schedule for train TR001 deleted successfully","timestamp":"2024-08-29T20:19:35.443Z"}
