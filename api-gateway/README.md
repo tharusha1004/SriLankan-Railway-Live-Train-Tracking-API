@@ -34,14 +34,14 @@ Use npm or yarn to install the required dependencies:
 
 3. **Configuration**
 
-Environment Variables
+    Environment Variables
 
-Create a .env file in the root directory to configure environment variables:
+    Create a .env file in the root directory to configure environment variables:
 
     ```bash
     PORT=3000;
 
-    LOGIN_SERVICE_URL=http://localhost:3007;=
+    LOGIN_SERVICE_URL=http://localhost:3007
     TRAIN_SERVICE_URL=http://localhost:3006
     SCHEDULE_SERVICE_URL=http://localhost:3008
             .   
