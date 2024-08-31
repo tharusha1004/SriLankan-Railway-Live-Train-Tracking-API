@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  engine-service:
+    build: ./engine-service
+    ports:
+      - "3001:3001"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+
+  gps-data-service:
+    build: ./gps-data-service
+    ports:
+      - "3002:3002"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+
+  schedule-service:
+    build: ./schedule-service
+    ports:
+      - "3003:3003"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+  
+  train-service:
+    build: ./train-service
+    ports:
+      - "3004:3004"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+
+  train-tracking-service:
+    build: ./train-tracking-service
+    ports:
+      - "3005:3005"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "3006:3006"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "3007:3007"
