@@ -12,7 +12,7 @@ const trainRoutes = require('./routes/train');
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3007;
 
 app.use('/api', authRoutes);
 app.use('/api', engineRoutes);
