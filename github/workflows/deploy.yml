@@ -1,9 +1,9 @@
-name: Deploy to EC2
+name: Deploy to Production
 
 on:
   push:
     branches:
-      - produnction  # Trigger deployment on push to the main branch
+      - produnction
 
 jobs:
   build:
