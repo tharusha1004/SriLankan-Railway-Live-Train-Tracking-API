@@ -4,42 +4,42 @@ services:
   engine-service:
     build: ./engine-service
     ports:
-      - "3001:3001"
+      - "5005:80"
     environment:
       - MONGODB_URI=${MONGODB_URI}
 
   gps-data-service:
     build: ./gps-data-service
     ports:
-      - "3002:3002"
+      - "5004:80"
     environment:
       - MONGODB_URI=${MONGODB_URI}
 
   schedule-service:
     build: ./schedule-service
     ports:
-      - "3003:3003"
+      - "5003:80"
     environment:
       - MONGODB_URI=${MONGODB_URI}
   
   train-service:
     build: ./train-service
     ports:
-      - "3004:3004"
+      - "5002:80"
     environment:
       - MONGODB_URI=${MONGODB_URI}
 
   train-tracking-service:
     build: ./train-tracking-service
     ports:
-      - "3005:3005"
+      - "5001:80"
     environment:
       - MONGODB_URI=${MONGODB_URI}
 
   user-service:
     build: ./user-service
     ports:
-      - "3006:3006"
+      - "5000:80"
     environment:
       - MONGODB_URI=${MONGODB_URI}
 
