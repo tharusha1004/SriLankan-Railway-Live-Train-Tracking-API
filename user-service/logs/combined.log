@@ -16,3 +16,28 @@
 {"level":"info","message":"User tharushap registered successfully","timestamp":"2024-08-29T20:48:19.527Z"}
 {"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-29T20:48:28.641Z"}
 {"level":"info","message":"User tharushap logged in successfully","timestamp":"2024-08-29T20:48:38.892Z"}
+{"level":"info","message":"Server is running on port 3006","timestamp":"2024-08-31T12:35:33.865Z"}
+{"level":"info","message":"User tharushaa registered successfully","timestamp":"2024-08-31T12:50:38.231Z"}
+{"level":"error","message":"Error registering user: E11000 duplicate key error collection: SLR-Train-API.users index: username_1 dup key: { username: \"tharushaa\" }","timestamp":"2024-08-31T12:50:44.629Z"}
+{"level":"error","message":"Error registering user: User validation failed: username: Path `username` is required., password: Path `password` is required.","timestamp":"2024-08-31T12:50:52.594Z"}
+{"level":"info","message":"User user registered successfully","timestamp":"2024-08-31T12:51:05.183Z"}
+{"level":"info","message":"User user logged in successfully","timestamp":"2024-08-31T12:51:19.532Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T12:52:30.068Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T12:53:24.048Z"}
+{"level":"warn","message":"Login failed for user: admin","timestamp":"2024-08-31T13:00:07.315Z"}
+{"level":"warn","message":"Login failed for user: admin","timestamp":"2024-08-31T13:01:13.222Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T13:01:36.577Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T13:04:05.202Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T13:04:45.424Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T13:06:23.882Z"}
+{"level":"error","message":"Error registering user: E11000 duplicate key error collection: SLR-Train-API.users index: username_1 dup key: { username: \"tharusha\" }","timestamp":"2024-08-31T13:06:48.076Z"}
+{"level":"error","message":"Error registering user: E11000 duplicate key error collection: SLR-Train-API.users index: username_1 dup key: { username: \"tharusha\" }","timestamp":"2024-08-31T13:06:49.482Z"}
+{"level":"info","message":"User user123 registered successfully","timestamp":"2024-08-31T13:07:02.694Z"}
+{"level":"warn","message":"Login failed for user: user123","timestamp":"2024-08-31T13:07:27.671Z"}
+{"level":"info","message":"User usera registered successfully","timestamp":"2024-08-31T13:07:56.630Z"}
+{"level":"info","message":"User usera logged in successfully","timestamp":"2024-08-31T13:08:11.119Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T13:09:53.560Z"}
+{"level":"warn","message":"Login failed for user: admin","timestamp":"2024-08-31T13:09:59.247Z"}
+{"level":"warn","message":"Login failed for user: admin","timestamp":"2024-08-31T13:10:02.691Z"}
+{"level":"warn","message":"Login failed for user: admin","timestamp":"2024-08-31T13:10:09.550Z"}
+{"level":"info","message":"Admin logged in successfully","timestamp":"2024-08-31T13:13:50.502Z"}
