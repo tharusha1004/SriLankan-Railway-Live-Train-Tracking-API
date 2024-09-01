@@ -24,7 +24,7 @@ jobs:
 
     - name: Deploy Services
       run: |
-        ssh ubuntu@${{ secrets.AWS_HOST }} << 'EOF'
+        ssh ec2-user@${{ secrets.AWS_HOST }} << 'EOF'
         export MONGO_URI=${{ secrets.MONGO_URI }}
         
         cd ~/SriLankan-Railway-Live-Train-Tracking-API/api-gateway
