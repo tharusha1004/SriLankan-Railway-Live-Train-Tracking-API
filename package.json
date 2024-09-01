@@ -4,7 +4,7 @@
   "description": "**Project**: SriLankan-Railway-Live-Train-Tracking-API  \r **Project Type**: Backend Development (API)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test"
   },
   "repository": {
     "type": "git",
